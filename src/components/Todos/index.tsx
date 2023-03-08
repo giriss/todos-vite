@@ -1,20 +1,19 @@
 import { FC, useCallback, useEffect, useState } from "react"
-import styled from '@emotion/styled'
 import TodoCreator from "./TodoCreator"
 import TodoList from "./TodoList"
 import {
   getTodos,
   createTodo as createNewTodo,
   deleteTodo as deleteExistingTodo,
-  Todo,
+  type Todo,
   updateTodo
 } from "../../requests/todos"
 
-interface TodoBaseProps {
+interface TodosProps {
   className?: string
 }
 
-const TodoBase: FC<TodoBaseProps> = ({ className }) => {
+const Todos: FC<TodosProps> = ({ className }) => {
   const [todos, setTodos] = useState<Todo[]>([])
 
   const createTodo = useCallback(async (todo: Todo) => {
@@ -53,9 +52,4 @@ const TodoBase: FC<TodoBaseProps> = ({ className }) => {
   )
 }
 
-const Todo = styled(TodoBase)`
-  max-width: 480px;
-  margin: 0 auto;
-`
-
-export default Todo
+export default Todos
