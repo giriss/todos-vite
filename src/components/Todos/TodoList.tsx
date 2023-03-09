@@ -1,4 +1,4 @@
-import { FC, useCallback } from "react"
+import { type FC } from "react"
 import List from '@mui/material/List'
 import TodoListItem from "./TodoListItem"
 import { Todo } from "../../requests/todos"

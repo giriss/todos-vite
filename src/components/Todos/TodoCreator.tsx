@@ -1,5 +1,6 @@
 import { type FC, FormEvent, useCallback, useRef, ChangeEvent, useState } from "react"
-import { TextField, Stack } from '@mui/material';
+import TextField from '@mui/material/TextField'
+import Stack from '@mui/material/Stack'
 import LoadingButton from '@mui/lab/LoadingButton'
 import { Todo } from "../../requests/todos";
 

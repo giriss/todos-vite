@@ -1,13 +1,11 @@
 import { type FC } from "react"
-import {
-  ListItem,
-  ListItemText,
-  ListItemButton,
-  ListItemIcon,
-  Icon,
-  Checkbox,
-  IconButton
-} from '@mui/material'
+import ListItem from '@mui/material/ListItem'
+import ListItemText from '@mui/material/ListItemText'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import Icon from '@mui/material/Icon'
+import Checkbox from '@mui/material/Checkbox'
+import IconButton from '@mui/material/IconButton'
 
 import { Todo } from "../../requests/todos"
 
